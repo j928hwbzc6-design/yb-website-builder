@@ -264,8 +264,6 @@ h1 {
     color: #7f8a99;
     font-size: 14px;
 }
-
-
 /* OUR WORK */
 
 .work-section {
@@ -369,6 +367,9 @@ h1 {
 .project-info a:hover {
     color: #00f0ff;
 }
+
+
+
 
 
 /* PROCESS */
