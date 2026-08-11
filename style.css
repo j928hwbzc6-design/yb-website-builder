@@ -653,3 +653,63 @@ footer p {
     }
 
 }
+/* YB PRICING FIX */
+
+.pricing-grid {
+    display: flex !important;
+    gap: 25px !important;
+    width: 100% !important;
+}
+
+.price-card {
+    flex: 1 !important;
+    background: #080d14 !important;
+    border: 2px solid #263544 !important;
+    border-radius: 12px !important;
+    padding: 30px !important;
+    min-height: 450px !important;
+}
+
+.price-card:hover {
+    border-color: #00f0ff !important;
+    transform: translateY(-5px);
+}
+
+.price-card.featured {
+    border: 2px solid #00f0ff !important;
+}
+
+.price-card h3 {
+    font-size: 50px !important;
+    margin: 15px 0 !important;
+}
+
+.price-card ul {
+    list-style: none !important;
+    padding: 20px 0 !important;
+}
+
+.price-card li {
+    margin: 12px 0 !important;
+    color: #ffffff !important;
+}
+
+.price-card a {
+    display: block !important;
+    margin-top: 25px !important;
+    padding: 15px !important;
+    text-align: center !important;
+    border: 1px solid #00f0ff !important;
+    color: #00f0ff !important;
+}
+
+@media (max-width: 700px) {
+    .pricing-grid {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .price-card {
+        width: 100% !important;
+    }
+}
