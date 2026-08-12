@@ -932,3 +932,184 @@ footer p {
     }
 
 }
+/* HOW IT WORKS */
+
+.how-it-works {
+    padding: 100px 6%;
+}
+
+.how-it-works .section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.how-it-works .section-heading > span {
+    color: #00ffff;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.how-it-works h2 {
+    color: white;
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.how-it-works h2 span {
+    color: #00ffff;
+}
+
+.how-it-works .section-heading p {
+    color: #7d8998;
+}
+
+
+/* STEPS */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.step-card {
+    position: relative;
+
+    padding: 35px;
+
+    min-height: 250px;
+
+    background: #080d14;
+
+    border: 1px solid #263544;
+
+    transition: 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #00ffff;
+
+    box-shadow: 0 0 30px rgba(0,255,255,0.12);
+}
+
+.step-number {
+    color: #00ffff;
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    margin-bottom: 35px;
+}
+
+.step-card h3 {
+    color: white;
+
+    font-size: 17px;
+
+    letter-spacing: 2px;
+}
+
+.step-card p {
+    color: #7d8998;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* FINAL CTA */
+
+.final-cta {
+    margin-top: 80px;
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    border: 1px solid #00ffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,255,255,0.08),
+            rgba(5,8,15,0.95)
+        );
+
+    box-shadow:
+        0 0 40px rgba(0,255,255,0.08);
+}
+
+.final-cta > span {
+    color: #00ffff;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+.final-cta h2 {
+    color: white;
+
+    font-size: clamp(35px, 6vw, 65px);
+
+    line-height: 1;
+
+    margin: 20px 0 35px;
+}
+
+.final-cta h2 strong {
+    display: block;
+
+    color: #00ffff;
+}
+
+.final-cta a {
+    display: inline-block;
+
+    padding: 17px 30px;
+
+    background: #00ffff;
+
+    color: #05070b;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.final-cta a:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 30px rgba(0,255,255,0.5);
+}
+
+
+/* PHONE */
+
+@media (max-width: 700px) {
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .how-it-works {
+        padding: 70px 5%;
+    }
+
+    .final-cta {
+        padding: 55px 20px;
+    }
+
+}
