@@ -715,3 +715,220 @@ footer p {
     }
 }
 
+/* =========================
+   YB CUSTOMER CTA
+========================= */
+
+.yb-cta {
+    position: relative;
+    overflow: hidden;
+
+    margin: 80px 5%;
+    padding: 90px 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 255, 255, 0.08),
+            rgba(5, 8, 15, 0.98) 55%,
+            rgba(0, 255, 255, 0.04)
+        );
+
+    border: 1px solid rgba(0, 255, 255, 0.35);
+}
+
+.yb-cta-glow {
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    right: -150px;
+    top: -150px;
+
+    background: #00ffff;
+
+    opacity: 0.08;
+
+    filter: blur(100px);
+
+    border-radius: 50%;
+}
+
+.yb-cta-content {
+    position: relative;
+    max-width: 850px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.yb-tag {
+    color: #00ffff;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+}
+
+.yb-cta h2 {
+    margin: 25px 0;
+
+    color: white;
+
+    font-size: clamp(40px, 7vw, 85px);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+}
+
+.yb-cta h2 span {
+    display: block;
+
+    color: #00ffff;
+
+    text-shadow:
+        0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.yb-cta-content > p {
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    color: #8c98a8;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* BUTTONS */
+
+.yb-cta-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.yb-main-button,
+.yb-secondary-button {
+    padding: 17px 28px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+.yb-main-button {
+    background: #00ffff;
+
+    color: #05070b;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 255, 0.25);
+}
+
+.yb-main-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 40px rgba(0, 255, 255, 0.5);
+}
+
+.yb-secondary-button {
+    border: 1px solid #00ffff;
+
+    color: #00ffff;
+}
+
+.yb-secondary-button:hover {
+    background: #00ffff;
+
+    color: #05070b;
+}
+
+
+/* STATS */
+
+.yb-stats {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    margin-top: 65px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.yb-stats div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.yb-stats strong {
+    color: #00ffff;
+
+    font-size: 25px;
+}
+
+.yb-stats span {
+    color: #697686;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+
+/* PHONE */
+
+@media (max-width: 650px) {
+
+    .yb-cta {
+        margin: 50px 15px;
+
+        padding: 65px 20px;
+    }
+
+    .yb-cta h2 {
+        letter-spacing: -1px;
+    }
+
+    .yb-cta-buttons {
+        flex-direction: column;
+    }
+
+    .yb-main-button,
+    .yb-secondary-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .yb-stats {
+        gap: 25px;
+    }
+
+}
