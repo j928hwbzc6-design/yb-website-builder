@@ -1118,3 +1118,7 @@ footer p {
     height: auto;
     display: block;
 }
+.logo img {
+    width: 80px;
+    height: auto;
+}
