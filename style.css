@@ -1211,3 +1211,20 @@ body::before {
 
     filter: blur(1px);
 }
+/* 🐉 NEON DRAGON BACKGROUND */
+
+body {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
